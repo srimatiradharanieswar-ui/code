@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Java – Data Types & Operators</title>
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                     Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 900px;
+        margin: auto;
+        padding: 30px;
+        color: #24292f;
+        background: #ffffff;
+    }
+
+    h1, h2, h3, h4 {
+        border-bottom: 1px solid #d0d7de;
+        padding-bottom: 6px;
+        margin-top: 32px;
+    }
+
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.6em; }
+    h3 { font-size: 1.3em; }
+    h4 { font-size: 1.1em; }
+
+    code {
+        background: #f6f8fa;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-size: 90%;
+    }
+
+    pre {
+        background: #f6f8fa;
+        padding: 16px;
+        border-radius: 6px;
+        overflow-x: auto;
+    }
+
+    pre code {
+        background: none;
+        padding: 0;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    table th, table td {
+        border: 1px solid #d0d7de;
+        padding: 8px 12px;
+        text-align: left;
+    }
+
+    table th {
+        background: #f6f8fa;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+
+    li {
+        margin: 6px 0;
+    }
+
+    .highlight {
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>✅ 10 MARKS</h1>
+
+<h1>1. Write in detail about Data Types in Java</h1>
+
+<h2>1. Introduction</h2>
+<p>
+Java is a <strong>strongly typed, object-oriented, and platform-independent programming language</strong>.
+To handle different kinds of data efficiently and securely, Java provides a well-defined system of
+<strong>data types</strong>.
+</p>
+
+<h2>2. Definition</h2>
+<p>
+A <strong>data type</strong> in Java specifies:
+</p>
+<ul>
+    <li>Type of data a variable can store</li>
+    <li>Amount of memory allocated</li>
+    <li>Range of values</li>
+    <li>Operations permitted</li>
+</ul>
+
+<h2>3. Importance of Data Types</h2>
+<ul>
+    <li>Efficient memory management</li>
+    <li>Prevents type mismatch errors</li>
+    <li>Improves program reliability</li>
+    <li>Ensures platform independence</li>
+    <li>Compile-time error checking</li>
+</ul>
+
+<h2>4. Classification of Data Types in Java</h2>
+<ol>
+    <li>Primitive Data Types</li>
+    <li>Non-Primitive (Reference) Data Types</li>
+</ol>
+
+<h2>5. Primitive Data Types</h2>
+
+<h3>5.1 List of Primitive Data Types</h3>
+<table>
+<tr>
+    <th>Data Type</th>
+    <th>Size</th>
+    <th>Default Value</th>
+    <th>Range</th>
+</tr>
+<tr><td>byte</td><td>1 byte</td><td>0</td><td>-128 to 127</td></tr>
+<tr><td>short</td><td>2 bytes</td><td>0</td><td>-32,768 to 32,767</td></tr>
+<tr><td>int</td><td>4 bytes</td><td>0</td><td>-2³¹ to 2³¹-1</td></tr>
+<tr><td>long</td><td>8 bytes</td><td>0L</td><td>-2⁶³ to 2⁶³-1</td></tr>
+<tr><td>float</td><td>4 bytes</td><td>0.0f</td><td>6–7 decimal digits</td></tr>
+<tr><td>double</td><td>8 bytes</td><td>0.0</td><td>15–16 decimal digits</td></tr>
+<tr><td>char</td><td>2 bytes</td><td>\u0000</td><td>Unicode</td></tr>
+<tr><td>boolean</td><td>1 bit</td><td>false</td><td>true / false</td></tr>
+</table>
+
+<h3>Program: Integer Data Types</h3>
+<pre><code>
+class IntegerDataTypes {
+    public static void main(String[] args) {
+        int age = 18;
+        long population = 1400000000L;
+
+        System.out.println("Age: " + age);
+        System.out.println("Population: " + population);
+    }
+}
+</code></pre>
+
+<h2>6. Non-Primitive Data Types</h2>
+<ul>
+    <li>String</li>
+    <li>Array</li>
+    <li>Class</li>
+    <li>Interface</li>
+    <li>Object</li>
+</ul>
+
+<h3>Program: String</h3>
+<pre><code>
+class StringType {
+    public static void main(String[] args) {
+        String name = "Krishna";
+        System.out.println(name);
+    }
+}
+</code></pre>
+
+<h2>Difference Between Primitive and Non-Primitive</h2>
+<table>
+<tr>
+    <th>Primitive</th>
+    <th>Non-Primitive</th>
+</tr>
+<tr><td>Stores value</td><td>Stores reference</td></tr>
+<tr><td>Fixed size</td><td>Dynamic size</td></tr>
+<tr><td>Faster</td><td>Slower</td></tr>
+<tr><td>Cannot be null</td><td>Can be null</td></tr>
+</table>
+
+<hr>
+
+<h1>Write in detail about Operators in Java</h1>
+
+<h2>1. Introduction</h2>
+<p>
+Operators are symbols used to perform operations on operands.
+Java provides a rich set of operators for computation, decision making, and bit manipulation.
+</p>
+
+<h2>2. Classification of Operators</h2>
+<ol>
+    <li>Arithmetic</li>
+    <li>Unary</li>
+    <li>Relational</li>
+    <li>Logical</li>
+    <li>Assignment</li>
+    <li>Bitwise</li>
+    <li>Shift</li>
+    <li>Ternary</li>
+</ol>
+
+<h2>3. Arithmetic Operators</h2>
+<table>
+<tr><th>Operator</th><th>Operation</th></tr>
+<tr><td>+</td><td>Addition</td></tr>
+<tr><td>-</td><td>Subtraction</td></tr>
+<tr><td>*</td><td>Multiplication</td></tr>
+<tr><td>/</td><td>Division</td></tr>
+<tr><td>%</td><td>Modulus</td></tr>
+</table>
+
+<h3>Example</h3>
+<pre><code>
+int a = 10;
+int b = 3;
+System.out.println(a + b);
+System.out.println(a % b);
+</code></pre>
+
+<h2>4. Logical Operators</h2>
+<table>
+<tr><th>Operator</th><th>Meaning</th></tr>
+<tr><td>&&</td><td>Logical AND</td></tr>
+<tr><td>||</td><td>Logical OR</td></tr>
+<tr><td>!</td><td>Logical NOT</td></tr>
+</table>
+
+<h2>5. Ternary Operator</h2>
+<pre><code>
+int max = (a > b) ? a : b;
+</code></pre>
+
+<h2>Conclusion</h2>
+<p>
+Data types and operators form the foundation of Java programming.
+A clear understanding of these concepts helps in writing efficient, readable, and error-free programs.
+</p>
+
+</body>
+</html>
